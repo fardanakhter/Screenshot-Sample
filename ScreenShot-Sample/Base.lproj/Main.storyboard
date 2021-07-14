@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lmD-Hp-b3W">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Da8-XS-5u6">
+            <objects>
+                <viewController id="lmD-Hp-b3W" customClass="ViewController" customModule="ScreenshotSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ofm-P4-3Ub">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-5n-yZI">
+                                <rect key="frame" x="16" y="769" width="382" height="36"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.098039215690000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="SCREENSHOT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="capture:" destination="lmD-Hp-b3W" eventType="touchUpInside" id="Muf-df-w9c"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="man-walking-dog" translatesAutoresizingMaskIntoConstraints="NO" id="HgG-7x-FoG">
+                                <rect key="frame" x="20" y="106" width="374" height="372"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="moe-er-O9z"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HgG-7x-FoG" firstAttribute="leading" secondItem="moe-er-O9z" secondAttribute="leading" constant="20" id="0CP-F2-Yhq"/>
+                            <constraint firstItem="u9h-5n-yZI" firstAttribute="leading" secondItem="moe-er-O9z" secondAttribute="leading" constant="16" id="OKD-cY-dxa"/>
+                            <constraint firstItem="HgG-7x-FoG" firstAttribute="top" secondItem="moe-er-O9z" secondAttribute="top" constant="62" id="Wtq-rE-O3A"/>
+                            <constraint firstItem="moe-er-O9z" firstAttribute="bottom" secondItem="u9h-5n-yZI" secondAttribute="bottom" constant="57" id="X24-8b-pG1"/>
+                            <constraint firstItem="moe-er-O9z" firstAttribute="trailing" secondItem="u9h-5n-yZI" secondAttribute="trailing" constant="16" id="dkz-HI-h7Q"/>
+                            <constraint firstItem="moe-er-O9z" firstAttribute="trailing" secondItem="HgG-7x-FoG" secondAttribute="trailing" constant="20" id="nZi-4J-FaI"/>
+                            <constraint firstItem="HgG-7x-FoG" firstAttribute="height" secondItem="ofm-P4-3Ub" secondAttribute="height" multiplier="0.415179" id="pxk-1B-RzM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAv-zd-XpC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="man-walking-dog" width="1100" height="734"/>
+    </resources>
+</document>
